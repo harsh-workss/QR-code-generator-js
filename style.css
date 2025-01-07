@@ -12,17 +12,21 @@ body{
     text-align: center;
 }
 .container{
+    
     background: whitesmoke;
-    height: 35vh;
+    height: auto;
     width: 28vw;
+    max-width: 400px; 
     border-radius: 12px;
-    margin-top: 35vh;
+    padding: 20px;
+    margin-top: 25vh;
 }
 .container p{
     font-size: 18px;
     font-weight: 700;
     text-align: start;
     padding: 30px 0 0 40px;
+    
 }
 .ip-box{
     font-size: 15px;
@@ -40,8 +44,26 @@ body{
     width: 23vw;
     border-radius: 3px;
     border: none;
-    color: white;
+    color: #fff;
     font-size: 13px;
     font-weight: 700;
     margin-top: 35px;
+    cursor: pointer;
+}
+.qrBox{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 1s;
+    
+}
+.qrBox img {
+    width: 100%;
+    padding: 10px;
+}
+.qrBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
 }
